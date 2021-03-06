@@ -70,11 +70,8 @@ nav {
     text-align: center;
   }
 
-main{
-    text-align: center;
-}
+/* main h1 {
 
-main h1 {
     padding: 10px;
     font-weight: 550;
     font-size: 24px;
@@ -82,15 +79,82 @@ main h1 {
 
 h1 {
     color: #3f3838;
-    font-weight: ;
     border: 2px solid #3f3838;
     height: 60px;
+    margin-right: 1000px;
+    padding-bottom: 10px;
+} */
+
+.container {
+    position: relative;
 }
 
-.background-image {
-    height: 75%;
-    width: 75%;
+.text-block-1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: darkgray;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+ .background-image {
+    height: 100%;
+    width: 100%;
+
+}
+
+.text-block-2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    color: darkslateblue;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    /* Centers along the main axis determined by flex-direction */
+    /* justify-content: center; */
+    /* Centers along the opposite axis */
+    /* align-items: center; */
+    /* width: 90%; */
+    /* Uses the height of the viewport */
+    /* height: 100vh; */
+    /* margin: 0 auto; */
+    /* border-style: solid; */
+    /* border-width: 2px; */
+   /* A flex-basis of 200px sets the starting width */
+  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card {
+    flex-grow: 1;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+.card header {
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+.card img {
+    width: 100%;
+  }
 footer {
     bottom: 0 left 0 width 100%;
     border: 2px solid darkgray;
