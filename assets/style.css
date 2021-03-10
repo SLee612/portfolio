@@ -5,33 +5,19 @@
 }
 
 body {
-    font-family: georgia;
+    font-family: helvetica;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
   }
 
-/* header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px;
-     */
-
-/* header {
-    background-color: #e2798b;
-    border-bottom: 10px solid #bd9f87;
-    height: 60px;
-    padding: 10px;
-} */
-
 header {
     padding: 25px;
     text-align: left;
-    background:  #e2798b;
+    background:  rgb(29, 153, 211);
     color: white;
+    border: 2px solid lightgray;
   }
 
 ul {
@@ -43,24 +29,16 @@ li {
     display: inline;
     margin-right: 16px;
     padding-top: 50px;
-    font-size: 14px;
+    font-size: 20px;
 }
-
-/* nav {
-    text-align: right;
-    font-size: 1.5em;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-} */
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: lightpink;
+    background-color: rgb(211, 213, 218);
+    border: 2px solid rgb(233, 241, 185);
+    border-radius: 25px;
   }
   
   nav a {
@@ -70,111 +48,98 @@ nav {
     text-align: center;
   }
 
-/* main h1 {
-
-    padding: 10px;
-    font-weight: 550;
-    font-size: 24px;
-}
-
-h1 {
-    color: #3f3838;
-    border: 2px solid #3f3838;
-    height: 60px;
-    margin-right: 1000px;
-    padding-bottom: 10px;
-} */
-
 .container {
+    display: flex;
     position: relative;
 }
 
 .text-block-1 {
+    display: flex;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: white;
-    color: darkgray;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    font-size: 50px;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+    }
 
+  .me {
+    display: flex;
+    height: 300px;
+    width: 240px;
+    border: 2px solid rgb(233, 241, 185);
+    border-radius: 25px;
+  }
+   
  .background-image {
+   display: flex;
     height: 100%;
     width: 100%;
-
+    border-radius: 0px
 }
 
 .text-block-2 {
+    display: flex;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: white;
-    color: darkslateblue;
-    padding-right: 40px;
-    padding-left: 40px;
+    bottom: 100px;
+    right: 100px;
+    border: 2px solid rgb(233, 241, 185);
+    background-color: rgb(213, 222, 226);
+    color: rgb(119, 118, 118);
+    padding: 25px;
+    text-align: left;
+    border-radius: 25px;
 }
+
 
 .links {
-    display: flex;
-    flex-direction: row;
-    /* Centers along the main axis determined by flex-direction */
-    /* justify-content: center; */
-    /* Centers along the opposite axis */
-    /* align-items: center; */
-    /* width: 90%; */
-    /* Uses the height of the viewport */
-    /* height: 100vh; */
-    /* margin: 0 auto; */
-    /* border-style: solid; */
-    /* border-width: 2px; */
-   /* A flex-basis of 200px sets the starting width */
-  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  display: flex;
   flex: 1 0 200px;
-  padding: 10px;
   text-align: center;
   border-style: solid;
-  border-width: 1px;
-}
-
-.card {
-    flex-grow: 1;
-    padding: 10px;
-    width: 250px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+  border-width: 2px;
+  background-color: rgb(213, 222, 226);
   }
   
 .card header {
+    border: 2px solid lightgray;
     padding: 20px;
-    background: #13293d;
+    background: rgb(29, 153, 211);
     color: #fff;
   }
   
-.card img {
-    width: 100%;
+section img {
+    width: 50%;
+    height: 50%;
+    border: 2px solid darkgray;
+    border-radius: 25px;
+    padding-top: 40px
   }
+
 footer {
+    display: flex;
     bottom: 0 left 0 width 100%;
     border: 2px solid darkgray;
     display: #3f3838;
-    background-color: #e2798b;
-    height: 40px;
-    text-align: right;
-    
+    background-color: rgb(29, 153, 211);
+    height: 60px; 
+}
+.input {
+  text-align: left;
+  color: white;
+  padding-top: 8px;
+  padding-left: 8px;
 }
 
-footer p {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
+button {
+  border-radius: 25px;
+  border: 2px solid rgb(233, 241, 185);
+  background-color: rgb(213, 222, 226);
+  color: rgb(119, 118, 118);
+  padding: 2px;
 }
+
 
 @media screen and (max-width: 768px) {
-    .card {
+    li .textblock1 .me .textblock2 footer {
       width: 100%;
-    }
+    }}
