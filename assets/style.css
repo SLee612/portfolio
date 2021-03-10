@@ -139,7 +139,22 @@ button {
 }
 
 
+ @media  screen and (max-width: 768px) {
+    header {
+      width: 65%;
+    }} 
+
 @media screen and (max-width: 768px) {
-    li .textblock1 .me .textblock2 footer {
-      width: 100%;
+  .container, .text-block-1, .text-block-2 {
+    width: 65%;
+    }}
+
+@media screen and (max-width: 768px) {
+    .links {
+      width: 65%;
+    }}
+
+@media screen and (max-width: 768px) {
+    footer, button, .input {
+      width: 65%;
     }}
