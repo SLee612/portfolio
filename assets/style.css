@@ -141,20 +141,42 @@ button {
 
  @media  screen and (max-width: 768px) {
     header {
-      width: 65%;
+      width: 100%;
     }} 
 
 @media screen and (max-width: 768px) {
-  .container, .text-block-1, .text-block-2 {
-    width: 65%;
+  .container {
+    width: 100%;
     }}
 
 @media screen and (max-width: 768px) {
     .links {
-      width: 65%;
+      width: 100%;
     }}
 
 @media screen and (max-width: 768px) {
     footer, button, .input {
-      width: 65%;
+      width: 100%;
     }}
+
+@media screen and (max-width: 768px) {
+    .me {
+      height: 50%;
+      width: 50%;
+     
+    }}
+
+@media screen and (max-width: 768px) {
+      .text-block-1 {
+        top: 5px;
+        left: 5px;
+      }}
+
+@media screen and (max-width: 768px) {
+      .text-block-2 {
+        height: 50%;
+        width: 50%;
+        font-size: 12px;
+        bottom: 5px;
+        right: 5px;
+      }}
